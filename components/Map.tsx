@@ -186,7 +186,7 @@ export default function Map({ selectedLocationId = null, onViewImage }: MapProps
                       if (onViewImage) onViewImage(item.id);
                     }}
                     onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = 'none';
+                      (e.target as HTMLImageElement).src = '/images/image_not_found.png';
                     }}
                   />
                   <div className="space-y-1 mt-2">

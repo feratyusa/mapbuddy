@@ -92,7 +92,7 @@ export default function Home() {
                 alt={`Rambu ${selectedImageId}`}
                 className="max-h-[70vh] min-w-[300px] md:min-w-[500px] w-auto object-contain rounded mx-auto block"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
+                  (e.target as HTMLImageElement).src = '/images/image_not_found.png';
                 }}
               />
             </div>
