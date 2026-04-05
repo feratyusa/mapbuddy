@@ -11,7 +11,7 @@ import {
   SortingState,
   ColumnFiltersState,
 } from "@tanstack/react-table";
-import { ChevronDown, ChevronUp, Search, MapPin, Image as ImageIcon, SlidersVertical, X } from "lucide-react";
+import { ChevronDown, ChevronUp, Search, MapPin, Image as ImageIcon, SlidersVertical, X, MapIcon } from "lucide-react";
 import ConditionChip from "./ConditionChip";
 import TypeChip from "./TypeChip";
 
@@ -97,6 +97,20 @@ const getColumns = (
               <ImageIcon className="w-3 h-3" />
               Image
             </button>
+
+            {hasLocation && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(`https://www.google.com/maps/search/?api=1&query=${data.latitude},${data.longitude}`, "_blank");
+                }}
+                className="flex items-center gap-1 px-2 py-1 bg-orange-50 text-orange-600 rounded hover:bg-orange-100 transition-colors text-xs font-semibold"
+                title="Open in Google Maps"
+              >
+                <MapIcon className="w-3 h-3" />
+                GMap
+              </button>
+            )}
           </div>
         );
       },
@@ -235,7 +249,7 @@ export default function DataTable({ onLocationSelect, onViewImage }: DataTablePr
             return (
               <>
                 {renderFilterGroup("type", "Tipe Rambu", "Tambah Tipe...")}
-                {renderFilterGroup("city", "Kota / Wilayah", "Tambah Kota...")}
+                {renderFilterGroup("road_section", "Ruas Jalan", "Tambah Ruas Jalan...")}
                 {renderFilterGroup("condition", "Kondisi", "Tambah Kondisi...")}
               </>
             );

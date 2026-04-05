@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mapbuddy",
-  description: "Explore road signs around you (if we have the data)",
+  title: "SIMFAS JATIM",
+  description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan Jawa Timur",
 };
 
 export default function RootLayout({

@@ -25,8 +25,8 @@ export default function WelcomeModal() {
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border border-gray-100 transform animate-in zoom-in-95 duration-300">
         {/* Header */}
         <div className="px-6 pt-8 pb-4 text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-2">Welcome</h2>
-          <p className="text-gray-500 text-sm">Jelajahi rambu lalu lintas jalan.</p>
+          <h2 className="text-3xl font-extrabold text-gray-900 mb-2">SIMFAS JATIM</h2>
+          <p className="text-gray-500 text-sm">Sistem Informasi Manajemen <br />Fasilitas Keselamatan Jalan Jawa Timur</p>
         </div>
 
         {/* Content */}
@@ -58,7 +58,7 @@ export default function WelcomeModal() {
             onClick={handleClose}
             className="w-full py-3.5 bg-gray-900 hover:bg-black text-white rounded-xl font-bold shadow-lg shadow-gray-200 transition-all active:scale-[0.98]"
           >
-            Mulai
+            Lanjut
           </button>
         </div>
 
