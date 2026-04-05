@@ -12,7 +12,7 @@ export default function ConvertPage() {
   const [fileName, setFileName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
+  const MAX_FILE_SIZE = 100 * 1024 * 1024; // 100MB
 
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -79,7 +79,7 @@ export default function ConvertPage() {
       <div className="max-w-2xl w-full">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <Link 
+          <Link
             href="/"
             className="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition-colors text-sm"
           >
@@ -96,7 +96,7 @@ export default function ConvertPage() {
         {/* Main Card */}
         <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
           {!result && !isProcessing ? (
-            <div 
+            <div
               className={`
                 border-2 border-dashed border-gray-200 rounded-lg p-10 flex flex-col items-center justify-center
                 hover:border-blue-400 hover:bg-blue-50 transition-all cursor-pointer group
@@ -108,10 +108,10 @@ export default function ConvertPage() {
                 Upload Excel
               </h2>
               <p className="text-xs text-gray-400 text-center mb-4">
-                Click or drag .xlsx files (Max 10MB)
+                Click or drag .xlsx files (Max 100MB)
               </p>
-              <input 
-                type="file" 
+              <input
+                type="file"
                 ref={fileInputRef}
                 onChange={handleFileUpload}
                 accept=".xlsx, .xls"
@@ -135,16 +135,16 @@ export default function ConvertPage() {
               <p className="text-sm text-gray-500 mb-6 text-center">
                 Processed <span className="text-emerald-600 font-semibold">{result.length}</span> rows from <span className="text-gray-900 font-medium">{fileName}</span>
               </p>
-              
+
               <div className="flex flex-row gap-3 w-full justify-center">
-                <button 
+                <button
                   onClick={handleDownload}
                   className="flex items-center justify-center gap-2 px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-semibold text-sm shadow-sm transition-all"
                 >
                   <Download className="w-4 h-4" />
                   Download JSON
                 </button>
-                <button 
+                <button
                   onClick={reset}
                   className="flex items-center justify-center gap-2 px-6 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-semibold text-sm transition-all"
                 >
