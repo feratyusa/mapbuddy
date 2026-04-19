@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://www.simfas-joker.site",
+    url: "https://simfas-joker.site",
     title: "SIMFAS JOKER ",
     description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
     siteName: "SIMFAS JOKER",
