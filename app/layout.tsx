@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "SIMFAS JOKER - Manajemen Fasilitas Keselamatan Jalan",
-    template: "%s | SIMFAS JOKER"
+    default: "SIMFAST JOKER - Manajemen Fasilitas Keselamatan Jalan",
+    template: "%s | SIMFAST JOKER"
   },
   description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
   keywords: [
-    "SIMFAS JOKER",
+    "SIMFAST JOKER",
     "Fasilitas Keselamatan Jalan",
     "Jombang",
     "Mojokerto",
@@ -29,19 +29,19 @@ export const metadata: Metadata = {
     "Sistem Informasi Geografis",
     "Lalu Lintas"
   ],
-  authors: [{ name: "SIMFAS JOKER Dev" }],
-  creator: "SIMFAS JOKER",
+  authors: [{ name: "SIMFAST JOKER Dev" }],
+  creator: "SIMFAST JOKER",
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://simfas-joker.site",
-    title: "SIMFAS JOKER ",
+    url: "https://simfast-joker.site",
+    title: "SIMFAST JOKER ",
     description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
-    siteName: "SIMFAS JOKER",
+    siteName: "SIMFAST JOKER",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SIMFAS JOKER ",
+    title: "SIMFAST JOKER ",
     description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
   },
   robots: {
