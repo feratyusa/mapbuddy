@@ -13,8 +13,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SIMFAS JATIM",
-  description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan Jawa Timur",
+  title: {
+    default: "SIMFAS JOKER - Manajemen Fasilitas Keselamatan Jalan",
+    template: "%s | SIMFAS JOKER"
+  },
+  description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
+  keywords: [
+    "SIMFAS JOKER",
+    "Fasilitas Keselamatan Jalan",
+    "Jombang",
+    "Mojokerto",
+    "Manajemen Fasilitas",
+    "Web GIS",
+    "Peta Keselamatan",
+    "Sistem Informasi Geografis",
+    "Lalu Lintas"
+  ],
+  authors: [{ name: "SIMFAS JOKER Dev" }],
+  creator: "SIMFAS JOKER",
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    url: "https://www.simfas-joker.com",
+    title: "SIMFAS JOKER ",
+    description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
+    siteName: "SIMFAS JOKER",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SIMFAS JOKER ",
+    description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
