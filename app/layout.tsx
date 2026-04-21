@@ -39,11 +39,6 @@ export const metadata: Metadata = {
     description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
     siteName: "SIMFAST JOKER",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "SIMFAST JOKER ",
-    description: "Sistem Informasi Manajemen Fasilitas Keselamatan Jalan wilayah Jombang dan Mojokerto. Platform digital untuk pemetaan dan pengelolaan fasilitas keselamatan jalan.",
-  },
   robots: {
     index: true,
     follow: true,

@@ -332,6 +332,35 @@ export default function DataTable({ onLocationSelect, onViewImage }: DataTablePr
               </tr>
             )}
           </tbody>
+          <tfoot className="sticky bottom-0 z-10">
+            <tr>
+              <td
+                colSpan={columns.length}
+                className="px-4 py-2 bg-gray-50 border-t border-gray-200 text-xs text-gray-500"
+              >
+                {(() => {
+                  const filtered = table.getFilteredRowModel().rows.length;
+                  const total = data.length;
+                  const isFiltered = filtered !== total;
+                  return (
+                    <span>
+                      Menampilkan{" "}
+                      <span className="font-semibold text-gray-700">{filtered}</span>
+                      {isFiltered ? (
+                        <>
+                          {" "}dari{" "}
+                          <span className="font-semibold text-gray-700">{total}</span>{" "}
+                          data (difilter)
+                        </>
+                      ) : (
+                        <> data</>
+                      )}
+                    </span>
+                  );
+                })()}
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>
